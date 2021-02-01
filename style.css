@@ -1,0 +1,137 @@
+body{
+    margin:0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration:none;
+    color:#000000;
+}
+
+ul{
+    list-style:none;
+}
+
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FAFAFA;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 0px 20px 0px 20px;
+    
+}
+
+.navbar_logo{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar_items{
+    display: flex;
+    padding:0;
+}
+
+.navbar_items li{
+    padding: 10px 10px;
+}
+
+.navbar_items li a:hover {
+    color:#2962FF;
+}
+.navbar_hambergerBtn{
+    display:none;
+}
+.container{
+    margin: 50px;
+}
+h1{
+    display:block;
+    font-weight: 500;
+    font-size: 40px;
+    color:#a2a2a2;
+    line-height:1.5em;
+}
+h1 a{
+    color: #424242;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-underline-position: under;
+}
+h1 a:hover{
+    color: #2962FF;
+}
+.projects{
+    margin-top: 20px;
+}
+#branddesigner{
+    display:flex;
+    justify-content: space-between;
+    margin:20px 0px 20px 0px;
+}
+#branddesigner div{
+    width: 480px; height: 280px;
+    background-color:#424242;
+    margin: 20px;
+}
+#webdesigner{
+    display:flex;
+    justify-content: space-between;
+    margin:20px 0px 20px 0px;
+}
+#webdesigner div{
+    width: 480px; height: 280px;
+    background-color:#424242;
+    margin: 20px;
+}
+#editorialdesigner{
+    display:flex;
+    justify-content: space-between;
+    margin:20px 0px 20px 0px;
+}
+#editorialdesigner div{
+    width: 480px; height: 280px;
+    background-color:#424242;
+    margin: 20px;
+}
+
+@media screen and (max-width: 800px){
+    .navbar{
+        flex-direction:column;
+        padding:20px;
+        align-items:flex-start;
+    }
+    .navbar_items{
+        display:none;
+        flex-direction: column;
+        align-items:center;
+        width: 100%;
+    }
+    .navbar_hambergerBtn{
+        display:block;
+        position: absolute;
+        right:20px;
+        font-size: 20px;
+    }
+
+    .navbar_items.active,
+    .navbar_icons.active{
+        display: flex;
+    }
+
+    h1{
+        display:block;
+        font-weight: 400;
+        font-size: 30px;
+        color:#a2a2a2;
+        line-height:1.5em;
+    }
+    #branddesigner{
+        display:block;
+    }
+    #branddesigner div{
+        width: 100%
+        background-color:#424242;
+        margin: 20px;
+    }
+}
